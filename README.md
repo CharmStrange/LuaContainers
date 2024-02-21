@@ -3,14 +3,6 @@ LuaContainers is a container library written in Lua. This library provides vario
 
 ### Installation
 To use this library, you need a Lua environment. Download the LuaContainers.lua file and include it in your Lua scripts.
-
-### Structure of Directory
-```
-Directory/
-│
-├── LuaContainers.lua
-└── your_main_file.lua
-```
 ```
 -- your_main_file.lua
 
@@ -18,6 +10,14 @@ local variable = require("LuaContainers")
 
 -- use yourself
 ...
+```
+
+### Structure of Directory
+```
+Directory/
+│
+├── LuaContainers.lua
+└── your_main_file.lua
 ```
 
 ### Usage
