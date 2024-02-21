@@ -11,6 +11,14 @@ Directory/
 ├── LuaContainers.lua
 └── your_main_file.lua
 ```
+```
+-- your_main_file.lua
+
+local variable = require("LuaContainers")
+
+-- use yourself
+...
+```
 
 ### Usage
 #### List
