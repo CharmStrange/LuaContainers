@@ -22,6 +22,13 @@ function List:clear()
     self.elements = {}
 end
 
+function List:check()
+    print("The length of List : " .. #self.elements)
+    for i = 1, #self.elements do
+        print(self.elements[i])
+    end
+end
+
 -- Stack implementation
 Stack = {}
 
@@ -42,6 +49,13 @@ end
 
 function Stack:clear()
     self.elements = {}
+end
+
+function Stack:check()
+    print("The length of List : " .. #self.elements)
+    for i = 1, #self.elements do
+        print(self.elements[i])
+    end
 end
 
 -- Queue implementation
@@ -68,6 +82,13 @@ end
 
 function Queue:clear()
     self.elements = {}
+end
+
+function Queue:check()
+    print("The length of List : " .. #self.elements)
+    for i = 1, #self.elements do
+        print(self.elements[i])
+    end
 end
 
 -- Deque implementation
@@ -118,6 +139,13 @@ function Deque:clear()
     self.first = 0
     self.last = -1
     self.elements = {}
+end
+
+function Deque:check()
+    print("The length of List : " .. #self.elements)
+    for i = 1, #self.elements do
+        print(self.elements[i])
+    end
 end
 
 -- LuaContainers table containing all container types
