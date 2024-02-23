@@ -148,7 +148,63 @@ function Deque:check()
     end
 end
 
+-- TreeNode implementation
+TreeNode = {}
+
+function TreeNode:new(value)
+    local node = {value = value, left = nil, right = nil}
+    setmetatable(node, self)
+    self.__index = self
+    return node
+end
+
+-- BinaryTree implementation
+BinaryTree = {}
+
+function BinaryTree:new()
+    local tree = {root = nil}
+    setmetatable(tree, self)
+    self.__index = self
+    return tree
+end
+
+function BinaryTree:insert(value)
+    if not self.root then
+        self.root = TreeNode:new(value)
+    else
+        self:_insertNode(self.root, value)
+    end
+end
+
+function BinaryTree:_insertNode(node, value)
+    if value < node.value then
+        if not node.left then
+            node.left = TreeNode:new(value)
+        else
+            self:_insertNode(node.left, value)
+        end
+    else
+        if not node.right then
+            node.right = TreeNode:new(value)
+        else
+            self:_insertNode(node.right, value)
+        end
+    end
+end
+
+function BinaryTree:traverseInOrder(callback)
+    self:_traverseInOrder(self.root, callback)
+end
+
+function BinaryTree:_traverseInOrder(node, callback)
+    if node then
+        self:_traverseInOrder(node.left, callback)
+        callback(node.value)
+        self:_traverseInOrder(node.right, callback)
+    end
+end
+
 -- LuaContainers table containing all container types
-LuaContainers = {List = List, Stack = Stack, Queue = Queue, Deque = Deque}
+LuaContainers = {List = List, Stack = Stack, Queue = Queue, Deque = Deque, BinaryTree = BinaryTree}
 
 return LuaContainers
