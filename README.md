@@ -99,6 +99,34 @@ local itemFromBack = myDeque:popBack()
 myDeque:clear()
 ```
 
+#### Tree / Binary Tree
+```
+-- Load LuaContainers library
+local LuaContainers = require("LuaContainers")
+
+-- Create a new binary tree
+local tree = LuaContainers.BinaryTree:new()
+
+-- Insert some values into the tree
+tree:insert(5)
+tree:insert(3)
+tree:insert(8)
+tree:insert(1)
+tree:insert(4)
+tree:insert(7)
+tree:insert(9)
+
+-- Define a callback function for in-order traversal
+local function printValue(value)
+    print(value)
+end
+
+-- Traverse the tree in-order and print values
+print("Values in the binary tree (in-order traversal):")
+tree:traverseInOrder(printValue)
+
+```
+
 #### [Example](test.lua)
 ```
 -- test.lua
