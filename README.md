@@ -1,4 +1,4 @@
-# LuaContainers (v1.0)
+# LuaContainers (v2.1)
 LuaContainers is a container library written in Lua. This library provides various data structures such as lists, stacks, queues, and deques to help manage data more easily in Lua programs.
 
 ### Installation
