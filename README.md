@@ -21,7 +21,7 @@ Directory/
 ```
 
 ### Usage
-[View](DOCUMENT.md)
+ [View Document](DOCUMENT.md)
 
 ### Contributing
 Bug reports, feature requests, and pull requests are welcome. Please feel free to create issues or send pull requests on the GitHub repository.
