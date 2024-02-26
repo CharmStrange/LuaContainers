@@ -1,4 +1,5 @@
 -- LuaContainers.lua
+-- Download this file and require as you want!
 
 -- List implementation
 List = {}
