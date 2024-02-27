@@ -1,8 +1,8 @@
 Luacontainers v1.0
-- 
+- provides List, Stack, Queue, Deque.
 
 Luacontainers v1.1
--
+- added container state check functions.
 
 LuaContainers v2.1
--
+- added `Tree` / `Binary Tree` containers.
