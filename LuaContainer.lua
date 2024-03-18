@@ -54,6 +54,7 @@ end
 
 function Stack:check()
     print("The length of List : " .. #self.elements)
+    print("'TOP' element in Stack : " .. #self.elements)
     for i = 1, #self.elements do
         print(self.elements[i])
     end
